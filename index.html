@@ -13,7 +13,7 @@
 	<div class="container">
 		<div id="cal-body">
 			<div id="display">
-				<input type="text" maxlength=40 name="display">
+				<input id="result" type="text" maxlength=40 name="display" value="">
 			</div>
 			<button class="left" value="clear()">
 				AC
@@ -21,46 +21,46 @@
 			<button>
 				CE
 			</button>
-			<button>
+			<button onclick="addDigit('%')">
 				%
 			</button>
-			<button>
+			<button onclick="addDigit('/')">
 				/
 			</button>
-			<button class="left" value="7">
+			<button class="left" value="7" onclick="addDigit('7')">
 				7
 			</button>
-			<button value="8">
+			<button value="8" onclick="addDigit('8')">
 				8
 			</button>
-			<button value="9">
+			<button value="9" onclick="addDigit('9')">
 				9
 			</button>
-			<button>
+			<button onclick="addDigit('*')">
 				*
 			</button>
-			<button class="left" value="4">
+			<button class="left" value="4" onclick="addDigit('4')">
 				4
 			</button>
-			<button value="5">
+			<button value="5" onclick="addDigit('5')">
 				5
 			</button>
-			<button value="6">
+			<button value="6" onclick="addDigit('6')">
 				6
 			</button>
-			<button>
+			<button onclick="addDigit('-')">
 				-
 			</button>
-			<button class="left" value="1">
+			<button class="left" value="1" onclick="addDigit('1')">
 				1
 			</button>
-			<button value="2">
+			<button value="2" onclick="addDigit('2')">
 				2
 			</button>
-			<button value="3">
+			<button value="3" onclick="addDigit('3')">
 				3
 			</button>
-			<button>
+			<button onclick="addDigit('+')">
 				+
 			</button>
 		</div>
