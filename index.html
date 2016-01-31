@@ -21,10 +21,10 @@
 			<button onclick="clearone()">
 				CE
 			</button>
-			<button onclick="addDigit('%')">
+			<button onclick="operator('%')">
 				%
 			</button>
-			<button onclick="addDigit('/')">
+			<button onclick="operator('/')">
 				/
 			</button>
 			<button class="left" value="7" onclick="addDigit('7')">
@@ -36,7 +36,7 @@
 			<button value="9" onclick="addDigit('9')">
 				9
 			</button>
-			<button onclick="addDigit('*')">
+			<button onclick="operator('*')">
 				*
 			</button>
 			<button class="left" value="4" onclick="addDigit('4')">
@@ -48,7 +48,7 @@
 			<button value="6" onclick="addDigit('6')">
 				6
 			</button>
-			<button onclick="addDigit('-')">
+			<button onclick="operator('-')" value="-">
 				-
 			</button>
 			<button class="left" value="1" onclick="addDigit('1')">
@@ -60,7 +60,7 @@
 			<button value="3" onclick="addDigit('3')">
 				3
 			</button>
-			<button onclick="add()">
+			<button onclick="operator('+')" value="+">
 				+
 			</button>
 			<button class="left" value="1" onclick="addDigit('.')">
@@ -72,7 +72,7 @@
 			<button value="3" onclick="addDigit('ans')">
 				Ans
 			</button>
-			<button onclick="evaluate()">
+			<button onclick="equals()">
 				=
 			</button>
 		</div>
