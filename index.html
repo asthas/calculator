@@ -13,12 +13,12 @@
 	<div class="container">
 		<div id="cal-body">
 			<div id="display">
-				<input id="result" type="text" maxlength=40 name="display" value="">
+				<input id="result" type="text" maxlength=40 name="display" value="0">
 			</div>
-			<button class="left" value="clear()">
+			<button class="left" onclick="clearall()">
 				AC
 			</button>
-			<button>
+			<button onclick="clearone()">
 				CE
 			</button>
 			<button onclick="addDigit('%')">
@@ -60,7 +60,7 @@
 			<button value="3" onclick="addDigit('3')">
 				3
 			</button>
-			<button onclick="addDigit('+')">
+			<button onclick="add()">
 				+
 			</button>
 			<button class="left" value="1" onclick="addDigit('.')">
@@ -72,7 +72,7 @@
 			<button value="3" onclick="addDigit('ans')">
 				Ans
 			</button>
-			<button onclick="addDigit('=')">
+			<button onclick="evaluate()">
 				=
 			</button>
 		</div>
